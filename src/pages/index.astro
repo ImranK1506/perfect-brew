@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import RecommendationForm from '../components/RecommendationForm.tsx';
+---
+
+<Layout title="Perfect Brew - AI Coffee Recommendations">
+  <Hero />
+  
+  <!-- Recommendation Section -->
+  <section id="recommendation-form" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+          Get Your Personalized Recipe
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+          Select your coffee beans and brewing equipment to receive AI-powered recommendations 
+          for the perfect extraction.
+        </p>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl border border-neutral-200 p-8 lg:p-12">
+          <RecommendationForm client:load />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="py-20 bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+          Why Choose Perfect Brew?
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+          Our AI-powered system considers multiple factors to deliver precise brewing recommendations.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">AI-Powered Analysis</h3>
+          <p class="text-neutral-600">
+            Advanced algorithms analyze bean characteristics and brewing methods to optimize extraction.
+          </p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">Precise Parameters</h3>
+          <p class="text-neutral-600">
+            Get exact temperature, grind size, timing, and ratio recommendations for optimal flavor.
+          </p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-neutral-200 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-neutral-900 mb-3">Instant Results</h3>
+          <p class="text-neutral-600">
+            Receive personalized brewing recommendations in seconds, ready to use immediately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

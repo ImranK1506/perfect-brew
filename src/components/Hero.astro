@@ -1,0 +1,107 @@
+---
+// Hero section inspired by Storeplate design
+---
+
+<section class="relative bg-gradient-to-br from-neutral-50 via-primary-50/30 to-accent-50/20 overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+      <defs>
+        <pattern id="coffee-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+          <circle cx="10" cy="10" r="1" fill="currentColor"/>
+        </pattern>
+      </defs>
+      <rect width="100" height="100" fill="url(#coffee-pattern)"/>
+    </svg>
+  </div>
+
+  <div class="relative container mx-auto px-4 py-20 lg:py-32">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Content -->
+      <div class="text-center lg:text-left">
+        <div class="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-800 rounded-full text-sm font-medium mb-6">
+          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          AI-Powered Recommendations
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
+          Discover Your
+          <span class="text-primary-600">Perfect Brew</span>
+        </h1>
+        
+        <p class="text-xl text-neutral-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          Get personalized coffee brewing recommendations tailored to your beans and equipment. 
+          Our AI analyzes your preferences to deliver the perfect cup every time.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="#recommendation-form" class="btn-primary text-lg px-8 py-4">
+            Get My Recipe
+          </a>
+          <a href="/how-it-works" class="btn-secondary text-lg px-8 py-4">
+            How It Works
+          </a>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-neutral-200">
+          <div class="text-center">
+            <div class="text-2xl font-bold text-primary-600">1000+</div>
+            <div class="text-sm text-neutral-600">Coffee Beans</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-primary-600">50+</div>
+            <div class="text-sm text-neutral-600">Brewing Methods</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-primary-600">AI</div>
+            <div class="text-sm text-neutral-600">Powered</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Visual -->
+      <div class="relative">
+        <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-neutral-900">Brewing Recipe</h3>
+              <div class="w-3 h-3 bg-accent-500 rounded-full animate-pulse"></div>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-neutral-600">Temperature</span>
+                <span class="font-medium text-primary-600">205°F</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-neutral-600">Grind Size</span>
+                <span class="font-medium text-primary-600">Medium-Fine</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-neutral-600">Brew Time</span>
+                <span class="font-medium text-primary-600">4m 30s</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-neutral-600">Ratio</span>
+                <span class="font-medium text-primary-600">1:16</span>
+              </div>
+            </div>
+            
+            <div class="pt-4 border-t border-neutral-200">
+              <p class="text-sm text-neutral-600 italic">
+                "Perfect for Ethiopian light roast with pour-over method"
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-200 rounded-full opacity-20 animate-bounce"></div>
+        <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-accent-200 rounded-full opacity-20 animate-pulse"></div>
+      </div>
+    </div>
+  </div>
+</section>
