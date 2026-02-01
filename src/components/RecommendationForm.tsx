@@ -4,13 +4,13 @@ interface CoffeeBean {
   id: string;
   brand: string;
   origin: string;
-  roastLevel: 'light' | 'medium' | 'medium-dark' | 'dark';
+  roastLevel: 'medium' | 'dark';
   flavorProfile: string[];
 }
 
 interface BrewingMachine {
   id: string;
-  type: 'espresso' | 'pour-over' | 'french-press' | 'aeropress' | 'drip';
+  type: 'espresso' | 'pour-over' | 'french-press' | 'aeropress' | 'drip' | 'full-automatic';
   brand: string;
   model: string;
 }
@@ -36,17 +36,31 @@ interface BrewingRecommendation {
 const sampleBeans: CoffeeBean[] = [
   {
     id: '1',
-    brand: 'Blue Bottle',
-    origin: 'Ethiopia',
-    roastLevel: 'light',
-    flavorProfile: ['floral', 'citrus', 'bright']
+    brand: 'Dark Roast',
+    origin: 'Australian',
+    roastLevel: 'dark',
+    flavorProfile: ['bold', 'smoky', 'rich']
   },
   {
     id: '2',
-    brand: 'Stumptown',
-    origin: 'Colombia',
+    brand: 'Medium Roast',
+    origin: 'Australian',
     roastLevel: 'medium',
-    flavorProfile: ['chocolate', 'caramel', 'balanced']
+    flavorProfile: ['balanced', 'smooth', 'caramel']
+  },
+  {
+    id: '3',
+    brand: 'Illy',
+    origin: 'Brazil',
+    roastLevel: 'medium',
+    flavorProfile: ['smooth', 'nutty', 'classic']
+  },
+  {
+    id: '4',
+    brand: 'Illy',
+    origin: 'Guatemala',
+    roastLevel: 'dark',
+    flavorProfile: ['rich', 'chocolatey', 'full-bodied']
   }
 ];
 
@@ -62,6 +76,48 @@ const sampleMachines: BrewingMachine[] = [
     type: 'french-press',
     brand: 'Bodum',
     model: 'Chambord'
+  },
+  {
+    id: '3',
+    type: 'espresso',
+    brand: 'Breville/Sage',
+    model: 'Barista Express'
+  },
+  {
+    id: '4',
+    type: 'espresso',
+    brand: 'Breville/Sage',
+    model: 'Barista Pro'
+  },
+  {
+    id: '5',
+    type: 'espresso',
+    brand: 'De\'Longhi',
+    model: 'La Specialista'
+  },
+  {
+    id: '6',
+    type: 'full-automatic',
+    brand: 'Jura',
+    model: 'E8'
+  },
+  {
+    id: '7',
+    type: 'full-automatic',
+    brand: 'Saeco',
+    model: 'PicoBaristo'
+  },
+  {
+    id: '8',
+    type: 'espresso',
+    brand: 'Gaggia',
+    model: 'Classic Pro'
+  },
+  {
+    id: '9',
+    type: 'aeropress',
+    brand: 'AeroPress',
+    model: 'Original'
   }
 ];
 
@@ -122,7 +178,7 @@ export default function RecommendationForm() {
             Choose Your Coffee Bean
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {sampleBeans.map((bean) => (
             <button
               key={bean.id}
@@ -171,7 +227,7 @@ export default function RecommendationForm() {
             Select Your Brewing Equipment
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {sampleMachines.map((machine) => (
             <button
               key={machine.id}
@@ -195,10 +251,17 @@ export default function RecommendationForm() {
                 )}
               </div>
               <p className="text-accent-600 font-medium capitalize">
-                {machine.type.replace('-', ' ')} brewing
+                {machine.type === 'full-automatic' ? 'Fully Automatic' : machine.type.replace('-', ' ')} brewing
               </p>
               <p className="text-sm text-neutral-600 mt-2">
-                Perfect for {machine.type === 'pour-over' ? 'precise control' : 'rich extraction'}
+                Perfect for {
+                  machine.type === 'pour-over' ? 'precise control' : 
+                  machine.type === 'espresso' ? 'rich crema' :
+                  machine.type === 'full-automatic' ? 'convenience' :
+                  machine.type === 'french-press' ? 'full immersion' :
+                  machine.type === 'aeropress' ? 'clean extraction' :
+                  'rich extraction'
+                }
               </p>
             </button>
           ))}
