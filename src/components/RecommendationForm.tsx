@@ -61,6 +61,13 @@ const sampleBeans: CoffeeBean[] = [
     origin: 'Guatemala',
     roastLevel: 'dark',
     flavorProfile: ['rich', 'chocolatey', 'full-bodied']
+  },
+    {
+    id: '5',
+    brand: 'Illy',
+    origin: 'Costa Rica',
+    roastLevel: 'dark',
+    flavorProfile: ['fruity', 'flowery', 'full-bodied']
   }
 ];
 
