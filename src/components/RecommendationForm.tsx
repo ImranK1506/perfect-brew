@@ -1,37 +1,5 @@
-import React, { useState } from 'react';
-
-interface CoffeeBean {
-  id: string;
-  brand: string;
-  origin: string;
-  roastLevel: 'medium' | 'dark';
-  flavorProfile: string[];
-}
-
-interface BrewingMachine {
-  id: string;
-  type: 'espresso' | 'pour-over' | 'french-press' | 'aeropress' | 'drip' | 'full-automatic';
-  brand: string;
-  model: string;
-}
-
-interface BrewingRecommendation {
-  temperature: {
-    fahrenheit: number;
-    celsius: number;
-  };
-  grindSize: string;
-  brewTime: {
-    minutes: number;
-    seconds: number;
-  };
-  waterRatio: {
-    coffee: number;
-    water: number;
-    description: string;
-  };
-  explanation: string;
-}
+import { useState } from 'react';
+import type { CoffeeBean, BrewingMachine, BrewingRecommendation } from '../types';
 
 const sampleBeans: CoffeeBean[] = [
   {
