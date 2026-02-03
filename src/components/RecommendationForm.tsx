@@ -161,7 +161,7 @@ export default function RecommendationForm() {
               className={`group p-6 border-2 rounded-xl text-left transition-all duration-200 hover:shadow-lg ${
                 selectedBean?.id === bean.id
                   ? 'border-primary-500 bg-primary-50 shadow-lg'
-                  : 'border-neutral-200 hover:border-primary-300 bg-white'
+                  : 'border-warm-200 hover:border-primary-300 bg-white'
               }`}
             >
               <div className="flex items-start justify-between mb-3">
@@ -182,7 +182,7 @@ export default function RecommendationForm() {
               </p>
               <div className="flex flex-wrap gap-1">
                 {bean.flavorProfile.map((flavor, index) => (
-                  <span key={index} className="px-2 py-1 bg-neutral-100 text-neutral-600 text-xs rounded-full">
+                  <span key={index} className="px-2 py-1 bg-warm-100 text-neutral-600 text-xs rounded-full">
                     {flavor}
                   </span>
                 ))}
@@ -210,7 +210,7 @@ export default function RecommendationForm() {
               className={`group p-6 border-2 rounded-xl text-left transition-all duration-200 hover:shadow-lg ${
                 selectedMachine?.id === machine.id
                   ? 'border-accent-500 bg-accent-50 shadow-lg'
-                  : 'border-neutral-200 hover:border-accent-300 bg-white'
+                  : 'border-warm-200 hover:border-accent-300 bg-white'
               }`}
             >
               <div className="flex items-start justify-between mb-3">
