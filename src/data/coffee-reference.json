@@ -1,0 +1,156 @@
+[
+  {
+    "brand": "Australian",
+    "type": "Brasil",
+    "outerBurr": 17,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Illy",
+    "type": "Classico",
+    "outerBurr": 15,
+    "innerBurr": 4,
+    "grams": 15
+  },
+  {
+    "brand": "Mövenpick",
+    "type": "Classic",
+    "outerBurr": 12,
+    "innerBurr": 4,
+    "grams": 17
+  },
+  {
+    "brand": "Red Beans",
+    "type": "Pink",
+    "outerBurr": 12,
+    "innerBurr": 4,
+    "grams": 17
+  },
+  {
+    "brand": "Illy",
+    "type": "Costa Rica",
+    "outerBurr": 14,
+    "innerBurr": 4,
+    "grams": 19
+  },
+  {
+    "brand": "Illy",
+    "type": "Brasile",
+    "outerBurr": 14,
+    "innerBurr": 4,
+    "grams": 17
+  },
+  {
+    "brand": "Gran Maestro",
+    "type": "Originale",
+    "outerBurr": 12,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Gran Maestro",
+    "type": "Celeste",
+    "outerBurr": 11,
+    "innerBurr": 4,
+    "grams": 19
+  },
+  {
+    "brand": "Simon Levelt",
+    "type": "Peruvian Opal",
+    "outerBurr": 13,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Lavazza",
+    "type": "For Cuba",
+    "outerBurr": 15,
+    "innerBurr": 4,
+    "grams": 19
+  },
+  {
+    "brand": "Australian",
+    "type": "Latin American",
+    "outerBurr": 13,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Australian",
+    "type": "Dark Roast",
+    "outerBurr": 13,
+    "innerBurr": 4,
+    "grams": 19
+  },
+  {
+    "brand": "La Colombe",
+    "type": "Lyon",
+    "outerBurr": 14,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Fair Trade",
+    "type": "Dark Roast",
+    "outerBurr": 12,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Lavazza",
+    "type": "Barista",
+    "outerBurr": 17,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Segafredo",
+    "type": "Intermezzo",
+    "outerBurr": 14,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Segafredo",
+    "type": "Casa Speciale",
+    "outerBurr": 14,
+    "innerBurr": 4,
+    "grams": 19
+  },
+  {
+    "brand": "Illy",
+    "type": "Guatemala",
+    "outerBurr": 16,
+    "innerBurr": 4,
+    "grams": 19
+  },
+  {
+    "brand": "Segafredo",
+    "type": "Biologica",
+    "outerBurr": 12,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Simon Levelt",
+    "type": "Uganda Amber",
+    "outerBurr": 13,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Australian",
+    "type": "Medium",
+    "outerBurr": 14,
+    "innerBurr": 4,
+    "grams": 18
+  },
+  {
+    "brand": "Mayee",
+    "type": "Triple blend",
+    "outerBurr": 19,
+    "innerBurr": 4,
+    "grams": 19
+  }
+]
