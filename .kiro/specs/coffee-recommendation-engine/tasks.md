@@ -14,12 +14,12 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
   - _Requirements: 5.1, 5.2, 5.3_
 
 - [ ] 2. Define core data models and validation schemas
-  - [~] 2.1 Create TypeScript interfaces for CoffeeBean, BrewingMachine, and BrewingRecommendation
+  - [ ] 2.1 Create TypeScript interfaces for CoffeeBean, BrewingMachine, and BrewingRecommendation
     - Implement complete type definitions with GrindSize interface including numeric levels
     - Define all enums and union types for coffee-related data
     - _Requirements: 3.1, 3.2, 3.3_
 
-  - [~] 2.2 Implement Zod validation schemas
+  - [ ] 2.2 Implement Zod validation schemas
     - Create validation schemas for all data models
     - Include proper constraints and validation rules
     - _Requirements: 3.4_
@@ -29,12 +29,12 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 3.4, 8.2**
 
 - [ ] 3. Create data storage layer
-  - [~] 3.1 Implement JSON-based data storage for beans, machines, and settings
+  - [ ] 3.1 Implement JSON-based data storage for beans, machines, and settings
     - Create data files with sample coffee beans and brewing machines
     - Implement data access functions with proper TypeScript typing
     - _Requirements: 3.1, 3.2, 3.3_
 
-  - [~] 3.2 Create database query functions
+  - [ ] 3.2 Create database query functions
     - Implement functions to retrieve beans, machines, and cached recommendations
     - Add proper error handling and validation
     - _Requirements: 1.2, 1.3_
@@ -48,13 +48,13 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 1.2, 1.3**
 
 - [ ] 4. Implement Claude AI integration service
-  - [~] 4.1 Create Claude API service with proper error handling
+  - [ ] 4.1 Create Claude API service with proper error handling
     - Implement ClaudeService class with recommendation generation
     - Add proper API key management and request formatting
     - Include retry logic and timeout handling
     - _Requirements: 2.1, 5.5_
 
-  - [~] 4.2 Implement fallback recommendation system
+  - [ ] 4.2 Implement fallback recommendation system
     - Create fallback logic when Claude API is unavailable
     - Implement cached recommendation retrieval
     - _Requirements: 2.6, 8.3_
@@ -72,17 +72,17 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 2.6, 8.3**
 
 - [ ] 5. Create API routes in Astro
-  - [~] 5.1 Implement /api/beans.ts route
+  - [ ] 5.1 Implement /api/beans.ts route
     - Create API endpoint to return available coffee beans
     - Add proper error handling and response formatting
     - _Requirements: 1.2, 5.4_
 
-  - [~] 5.2 Implement /api/machines.ts route
+  - [ ] 5.2 Implement /api/machines.ts route
     - Create API endpoint to return available brewing machines
     - Add proper error handling and response formatting
     - _Requirements: 1.3, 5.4_
 
-  - [~] 5.3 Implement /api/recommendations.ts route
+  - [ ] 5.3 Implement /api/recommendations.ts route
     - Create API endpoint for generating recommendations
     - Integrate Claude service with fallback logic
     - Add comprehensive error handling
@@ -96,29 +96,29 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Property 15: Network Retry Logic**
     - **Validates: Requirements 8.4**
 
-- [~] 6. Checkpoint - Ensure API layer functionality
+- [ ] 6. Checkpoint - Ensure API layer functionality
   - Ensure all API routes work correctly, ask the user if questions arise.
 
 - [ ] 7. Create React island components
-  - [~] 7.1 Implement BeanSelector component
+  - [ ] 7.1 Implement BeanSelector component
     - Create interactive bean selection component with proper TypeScript props
     - Add loading states and error handling
     - Implement proper accessibility attributes
     - _Requirements: 1.1, 1.2, 6.3, 6.4_
 
-  - [~] 7.2 Implement MachineSelector component
+  - [ ] 7.2 Implement MachineSelector component
     - Create interactive machine selection component
     - Add loading states and error handling
     - Implement proper accessibility attributes
     - _Requirements: 1.1, 1.3, 6.3, 6.4_
 
-  - [~] 7.3 Implement RecommendationDisplay component
+  - [ ] 7.3 Implement RecommendationDisplay component
     - Create component to display AI-generated recommendations
     - Format temperature, grind size, brew time, and ratios clearly
     - Add proper typography and responsive design
     - _Requirements: 2.2, 2.3, 2.4, 2.5, 4.2, 4.4_
 
-  - [~] 7.4 Implement RecommendationForm component
+  - [ ] 7.4 Implement RecommendationForm component
     - Create form component that combines selectors and handles submission
     - Add proper form validation and error states
     - Implement loading states during API calls
@@ -137,24 +137,24 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 6.4**
 
 - [ ] 8. Create Astro page components
-  - [~] 8.1 Implement homepage (index.astro)
+  - [ ] 8.1 Implement homepage (index.astro)
     - Create homepage with bean/machine selectors and recommendation form
     - Add proper SEO meta tags and semantic HTML structure
     - Implement responsive layout with Tailwind CSS
     - _Requirements: 1.1, 4.1, 4.2, 6.1, 6.2, 7.1_
 
-  - [~] 8.2 Implement recommendation results page (results.astro)
+  - [ ] 8.2 Implement recommendation results page (results.astro)
     - Create dedicated page for displaying recommendation results
     - Add proper SEO meta tags and semantic HTML
     - Implement responsive design
     - _Requirements: 4.2, 6.1, 6.2, 7.2_
 
-  - [~] 8.3 Implement About page (about.astro)
+  - [ ] 8.3 Implement About page (about.astro)
     - Create About page explaining recommendation methodology
     - Add proper SEO meta tags and semantic HTML
     - _Requirements: 6.1, 6.2, 7.3_
 
-  - [~] 8.4 Implement How it Works page (how-it-works.astro)
+  - [ ] 8.4 Implement How it Works page (how-it-works.astro)
     - Create page detailing AI recommendation process
     - Add proper SEO meta tags and semantic HTML
     - _Requirements: 6.1, 6.2, 7.4_
@@ -172,13 +172,13 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 6.3**
 
 - [ ] 9. Implement navigation and layout components
-  - [~] 9.1 Create Layout.astro component
+  - [ ] 9.1 Create Layout.astro component
     - Implement consistent layout with navigation and branding
     - Add proper semantic HTML structure
     - Implement responsive navigation
     - _Requirements: 6.2, 7.5_
 
-  - [~] 9.2 Create Navigation component
+  - [ ] 9.2 Create Navigation component
     - Implement consistent navigation across all pages
     - Add proper accessibility attributes
     - _Requirements: 6.4, 7.5_
@@ -188,12 +188,12 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 7.5**
 
 - [ ] 10. Implement error handling and logging
-  - [~] 10.1 Create error boundary components
+  - [ ] 10.1 Create error boundary components
     - Implement React error boundaries for graceful error handling
     - Add user-friendly error messages
     - _Requirements: 8.1_
 
-  - [~] 10.2 Implement logging system
+  - [ ] 10.2 Implement logging system
     - Create privacy-preserving error logging
     - Ensure no sensitive user data is logged
     - _Requirements: 8.5_
@@ -203,25 +203,25 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - **Validates: Requirements 8.5**
 
 - [ ] 11. Styling and theme implementation
-  - [~] 11.1 Create custom Tailwind CSS theme
+  - [ ] 11.1 Create custom Tailwind CSS theme
     - Implement minimalist design with maximum 3 colors
     - Add custom typography and spacing
     - Ensure ample whitespace throughout design
     - _Requirements: 4.1, 5.3_
 
-  - [~] 11.2 Implement responsive design patterns
+  - [ ] 11.2 Implement responsive design patterns
     - Add mobile-first responsive design
     - Ensure all components work across device sizes
     - _Requirements: 4.2_
 
 - [ ] 12. Integration and final wiring
-  - [~] 12.1 Wire all components together
+  - [ ] 12.1 Wire all components together
     - Connect React islands to API routes
     - Implement proper data flow between components
     - Add proper error handling throughout the application
     - _Requirements: 1.4, 2.1, 8.1_
 
-  - [~] 12.2 Implement static site generation optimization
+  - [ ] 12.2 Implement static site generation optimization
     - Configure Astro for optimal static generation
     - Optimize bundle sizes and loading performance
     - _Requirements: 5.6_
@@ -231,7 +231,7 @@ This implementation plan breaks down the Coffee Recommendation Engine into discr
     - Test error scenarios and fallback behavior
     - _Requirements: 1.1, 2.1, 2.6_
 
-- [~] 13. Final checkpoint - Comprehensive testing
+- [ ] 13. Final checkpoint - Comprehensive testing
   - Ensure all tests pass and application works end-to-end, ask the user if questions arise.
 
 ## Notes
