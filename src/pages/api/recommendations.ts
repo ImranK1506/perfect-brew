@@ -2,7 +2,6 @@ import type { APIRoute } from 'astro';
 import { claudeService } from '../../services/claude';
 import type { RecommendationRequest, RecommendationResponse, CoffeeBean, BrewingMachine } from '../../types';
 
-// Sample data (same as in the component)
 const sampleBeans: CoffeeBean[] = [
   {
     id: '1',
