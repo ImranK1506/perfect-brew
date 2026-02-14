@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FAQ from '../components/FAQ.tsx';
+---
+
+<Layout 
+  title="FAQ - Perfect Brew" 
+  description="Frequently asked questions about Perfect Brew's AI-powered coffee brewing recommendations."
+>
+  <main class="min-h-screen bg-warm-50 py-16">
+    <div class="container mx-auto px-4">
+      <FAQ client:load />
+    </div>
+  </main>
+</Layout>
