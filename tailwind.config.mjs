@@ -4,73 +4,66 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Warm coffee cafe atmosphere palette
+        // Fresh modern palette with vibrant accents
         primary: {
-          50: '#fdf8f3',
-          100: '#faf0e4',
-          200: '#f4ddc4',
-          300: '#ecc49b',
-          400: '#e2a66f',
-          500: '#d4874a', // Rich coffee brown
-          600: '#c16d3d',
-          700: '#a15534',
-          800: '#824530',
-          900: '#6b3a29',
+          50: '#fef3f2',
+          100: '#fee5e2',
+          200: '#fecfca',
+          300: '#fcaea5',
+          400: '#f87f71',
+          500: '#ef5844', // Vibrant coral
+          600: '#dc3a26',
+          700: '#b92e1c',
+          800: '#99291b',
+          900: '#7f281d',
         },
-        warm: {
-          50: '#fefcf9',
-          100: '#fdf7f0',
-          200: '#faeee1',
-          300: '#f6e0c7',
-          400: '#f0cca3',
-          500: '#e8b47d', // Warm caramel
-          600: '#d89c5a',
-          700: '#c4823f',
-          800: '#a16b35',
-          900: '#85582f',
+        secondary: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e', // Fresh green
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
         },
         neutral: {
-          50: '#faf9f7',
-          100: '#f3f1ed',
-          200: '#e8e4dd',
-          300: '#d6cfc4',
-          400: '#b8aea0',
-          500: '#9c8f7e', // Warm gray
-          600: '#7d6f5e',
-          700: '#675a4a',
-          800: '#564c3f',
-          900: '#4a4037',
+          50: '#fafafa',
+          100: '#f5f5f5',
+          200: '#e5e5e5',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
         },
-        accent: {
-          50: '#fef7ed',
-          100: '#fdedd5',
-          200: '#fad7aa',
-          300: '#f6bb74',
-          400: '#f1943c',
-          500: '#ed7516', // Warm orange accent
-          600: '#de5a0c',
-          700: '#b8440c',
-          800: '#933612',
-          900: '#762e12',
-        }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        display: ['Cal Sans', 'Inter', 'system-ui', 'sans-serif'],
       },
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'mesh-gradient': 'radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%)',
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: 'none',
-            color: '#404040',
-            lineHeight: '1.7',
-          }
-        }
-      }
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'slide-up': 'slide-up 0.5s ease-out',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'slide-up': {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
     },
   },
   plugins: [],
